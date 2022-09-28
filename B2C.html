@@ -15,7 +15,13 @@
       background: url("https://dev.jobcommander.com/static/media/splash.46cf87c246839e946257.jpg");
       background-size: cover;
     }
-
+    .signup-container
+    {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    }
     .panel-body p {
       text-align: center;
       font-size: 5rem;
@@ -71,7 +77,7 @@
   </style>
 
   <body>
-    <div data-tenant-branding-background-color="true">
+    <div class='signup-container' data-tenant-branding-background-color="true">
       <div class="panel panel-default">
         <div class="panel-body">
           <p>Join JobCommander</p>
