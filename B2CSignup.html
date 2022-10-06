@@ -26,11 +26,27 @@
         Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji,
         Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
     }
-    .signup-container {
-      display: flex;
-      justify-content: center;
+    .container{
       align-items: center;
+      display: flex;
       height: 100vh;
+      justify-content: center;
+    }
+    .container:before{
+          background-image: url(/static/media/splash.46cf87c….jpg);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    content: " ";
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+    }
+    .signup-container {
+      margin: 5px auto auto;
     }
     .panel-body p {
       text-align: center;
@@ -125,7 +141,8 @@
   </style>
 
   <body>
-    <div class="signup-container" data-tenant-branding-background-color="true">
+    <div class="container">
+        <div class="signup-container" data-tenant-branding-background-color="true">
       <div class="panel panel-default">
         <div class="panel-body">
           <p>Join JobCommander</p>
@@ -134,5 +151,7 @@
         </div>
       </div>
     </div>
+    </div>
+    
   </body>
 </html>
